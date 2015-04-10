@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var enterNameTextField: UITextField!
     @IBOutlet weak var enterMessageTextField: UITextField!
     @IBOutlet weak var mailButton: UIButton!
-    
+    @IBOutlet weak var nameLabel: UILabel!
     
 
     
@@ -33,10 +33,13 @@ class ViewController: UIViewController {
         
         // Adding a Comment to test commits.
         messageLabel.hidden = false
+        nameLabel.hidden = false
         messageLabel.text = enterMessageTextField.text
+        nameLabel.text = enterNameTextField.text
         messageLabel.textColor = UIColor.redColor()
-        
+        nameLabel.textColor = UIColor.blueColor()
         enterMessageTextField.text = ""
+        enterNameTextField.text = ""
         enterMessageTextField.resignFirstResponder()
     
         

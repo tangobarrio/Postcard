@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7515.2" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wxY-6K-v0d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wxY-6K-v0d">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--Barcelona-->
@@ -118,6 +118,15 @@
                                     <rect key="frame" x="45" y="337" width="268" height="30"/>
                                 </variation>
                             </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13b-Cg-eyJ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="52" y="177" width="131" height="40"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -128,6 +137,7 @@
                                 <exclude reference="eHx-2L-mY0"/>
                                 <exclude reference="Vcw-2s-vmi"/>
                                 <exclude reference="jAh-iQ-adG"/>
+                                <exclude reference="13b-Cg-eyJ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -138,6 +148,7 @@
                                 <include reference="eHx-2L-mY0"/>
                                 <include reference="Vcw-2s-vmi"/>
                                 <include reference="jAh-iQ-adG"/>
+                                <include reference="13b-Cg-eyJ"/>
                             </mask>
                         </variation>
                     </view>
@@ -146,6 +157,7 @@
                         <outlet property="enterNameTextField" destination="QIK-HM-XBl" id="4QH-Jy-Eal"/>
                         <outlet property="mailButton" destination="Vcw-2s-vmi" id="1dr-aT-uEN"/>
                         <outlet property="messageLabel" destination="eHx-2L-mY0" id="iZT-bM-8vL"/>
+                        <outlet property="nameLabel" destination="13b-Cg-eyJ" id="eoE-Ph-ifw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
